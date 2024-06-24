@@ -1,0 +1,416 @@
+body{
+    left: 0;
+    top: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 8.45%;
+}
+.menu_section{
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+.menu_section .nav_item{
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: #000;
+    font-size: 1.25rem;
+    padding: 0 .75rem;
+    font-weight: 500;
+    transition: all 300ms;
+}
+.menu_section .nav_item:hover{
+    color: #2c737b;
+}
+.change_lang_block{
+    padding: 2.5rem 0;
+}
+.change_lang_block .select_lang{
+    font-family: 'Montserrat', sans-serif;
+    color: #0F2B2E;
+    font-weight: 600;
+    font-size: 1.25rem;
+    border: none;
+}
+.select_lang:focus{
+    border: none;
+}
+.front_block_about{
+    width: 100%;
+    background-image: url("./background_front_block_about.png");
+    background-size: cover;
+    height: 800px;
+    position: relative;
+}
+.front_block_text{
+    padding-top: 5rem;
+    margin-left: 8.45%;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+.title_front_block_about{
+    font-weight: bold;
+    font-size: 3rem;
+}
+.front_block_description,.front_block_add_text{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 1.75rem;
+    width: 60%;
+}
+.front_block_add_text{
+    margin-top: 5rem;
+    width: 45%; 
+}
+.link_list{
+    right: 8.45%;
+    position: absolute;
+    margin-top: 7.5rem;
+}
+.list_text{
+    display: flex;
+    font-size: 1.25rem;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+.links_group{
+    display: flex;
+    flex-direction: row;
+    width: 310px;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.links_group .link_item{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.link_item img{
+    width: 100%;
+    height: 100%;
+}
+.head_person_block{
+    position: relative;
+}
+.head_person{
+    padding-top: 6.25rem;
+    padding-bottom: 7rem;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    color: #0F2B2E;
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.head_person .head_person_img{
+    width: 41.625rem;
+    height: 43.75rem;
+    background-image: url('../style_about/profile_photo.jpg');
+    background-size: cover;
+    margin: auto;
+}
+.head_person_name{
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 3.375rem;
+}
+.head_person_status{
+    font-size: 2.25rem;
+    font-weight: 500;
+    text-align: center;
+    margin-top: .945rem;
+}
+.our_history{
+    background-color: #0F2B2E;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    margin-top: 70rem;
+    padding-top: 7.5rem;
+    padding-bottom: 15rem;
+}
+.our_history .title_our_history{
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+.our_history .text_our_history{
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    width: 66%;
+    margin: auto;
+    margin-top: 7.5rem;
+}
+.logo_white{
+    position: relative;
+    margin-top: 7rem;
+}
+.logo_white img{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.new_direct{
+    padding: 4.5rem 8.45% 9rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #0F2B2E;
+}
+.new_direct_title{
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-align: center;
+}
+.new_direct_text{
+    font-size: 2rem;
+    font-weight: medium;
+    text-align: center;
+    margin-top: 7.875rem;
+}
+.rebranding_block{
+    background-color: #0F2B2E;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    padding: 0.5rem 8.45% 13rem;
+    text-align: center;
+}
+.rebranding_block .logo_white{
+    margin-top: 2rem;
+}
+.rebranding_title{
+    margin-top: 13rem;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+.rebrandnig_text{
+    margin-top: 5rem;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.our_works{
+    font-family: 'Montserrat', sans-serif;
+    color: #0F2B2E;
+    padding: 7.25rem 8.45% 9.375rem;
+    text-align: center;
+}
+.our_works_title{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.our_works_text{
+    margin-top: 4.188rem;
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 0 10rem;
+}
+.our_works_description{
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: left;
+    margin-top: 8.438rem;
+}
+.our_works_list{
+    width: 100%;
+    margin-top: 9rem;
+}
+.our_works_list img{
+    width: 100%;
+}
+.our_future{
+    background-color: #0F2B2E;
+    padding: 0 8.45% 12.688rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    text-align: center;
+}
+.our_future .logo_white_block{
+    padding-top: 2rem;
+}
+
+.our_future .logo_white_block .logo_white{
+    margin-top: 0%;
+}
+.our_future_title{
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 12rem;
+}
+.our_future_text{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-top: 4.813rem;
+}
+footer{
+    background-color: #ffffff;
+    padding: 1.25rem 8.45% 5rem;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+.contact_block{
+    display: flex;
+    flex-direction: column;
+    color: #0F2B2E;
+    width: 27%;
+    max-width: 430px;
+    padding-top: 3rem;
+}
+.contact_title{
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: left;
+}
+.contact_item{
+    display: flex;
+    justify-content: space-between;
+    margin-top: .875rem;
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+.social_block{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3.25rem;
+}
+.social_list{
+    display: flex;
+    justify-content: space-between;
+    max-width: 750px;
+}
+.social_list_item{
+    text-decoration: none;
+    color: #0F2B2E;
+    display: flex;
+    text-align: right;
+    padding-left: 3.438rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+.social_links{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    margin-top: 2.125rem;
+    gap: 1rem;
+}
+.social_links a {
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+}
+.social_links a img{
+    width: 100%;
+}
+
+@media screen and (min-width: 2550px){
+    header{
+        padding: 0 20%;
+    }
+    .front_block_text {
+        margin-left: 20%;
+    }
+    .link_list{
+        right: 20%;
+    }
+    .new_direct {
+        padding: 4.5rem 20% 9rem;
+    }
+    .new_direct_text {
+        margin-top: 5rem;
+    }
+    .rebranding_block{
+        padding: 0.5rem 20% 10rem;
+    }
+    .our_works{
+        padding: 7.25rem 20% 9.375rem;
+    }
+    .our_future{
+        padding: 0 20% 12.688rem
+    }
+    footer{
+        padding: 1.25rem 20% 5rem;
+    }
+}
+@media screen and (max-width: 1691px){
+    .link_list{
+        margin-top: 5rem;
+    }
+    .contact_block{
+        width: 35%;
+    }
+}
+@media screen and (max-width: 1540px){
+    .front_block_description, .front_block_add_text{
+        width: 70%;
+    }
+    .our_history .text_our_history{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 1400px){
+    header{
+        padding: 0 4%;
+    }
+    .front_block_text{
+        margin-left: 4%;
+    }
+    .link_list{
+        right: 4%;
+    }
+    .our_works{
+        padding: 5.25rem 4% 8.375rem;
+    }
+    .our_works_text{
+        padding: 0 5rem;
+    }
+    footer{
+        padding: 1.25rem 4% 5rem
+    }
+}
+@media screen and (max-width: 1261px){
+    header {
+        padding: 0 1%;
+    }
+    .front_block_description, .front_block_add_text {
+        width: 80%;
+    }
+    .menu_section .nav_item{
+        font-size: 1rem;
+    }
+    .change_lang_block .select_lang {
+        font-size: 1rem;
+    }
+    footer {
+        padding: 1.25rem 1% 5rem;
+    }
+    .contact_block {
+        width: 40%;
+    }
+}
+@media screen and (max-width: 1167px){
+    .social_list_item{
+        font-size: 1rem;
+    }
+    .contact_item{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 1032px){
+    .logo_section{
+        width: 250px;
+    }
+    .logo_section img{
+        width: 100%;
+    }
+}

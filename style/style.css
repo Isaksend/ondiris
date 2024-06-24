@@ -1,0 +1,790 @@
+body{
+    left: 0;
+    top: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 8.45%;
+}
+.menu_section{
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+.menu_section .nav_item{
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: #000;
+    font-size: 1.25rem;
+    padding: 0 .75rem;
+    font-weight: 500;
+    transition: all 300ms;
+}
+.menu_section .nav_item:hover{
+    color: #2c737b;
+}
+.change_lang_block{
+    padding: 2.5rem 0;
+}
+.change_lang_block .select_lang{
+    font-family: 'Montserrat', sans-serif;
+    color: #0F2B2E;
+    font-weight: 600;
+    font-size: 1.25rem;
+    border: none;
+}
+.select_lang:focus{
+    border: none;
+}
+
+.front_block{
+    width: 83.1%;
+    height: 850px;
+    padding: 5.313rem 8.45%;
+    position: relative;
+    background-image: url('./asset/background/first_bkg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ondiris_block{
+    position: absolute;
+    right: 0;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    background-color: rgba(15, 43, 46, 0.7);
+    padding: 0 3.375rem 11rem 13.75rem;
+    right: 8.45%;
+    border: 1px #fff solid;
+}
+.ondiris_block .ondiris_big_text{
+    font-weight: 700;
+    font-size: 6rem;
+}
+.ondiris_block .ondiris_small_text{
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: right;
+}
+.text_build_future{
+    font-size: 2.25rem;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    position: absolute;
+    text-align: left;
+    bottom: 100px;
+}
+.main_more_btn{
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    font-size: 2rem;
+    font-weight: 500;
+    background-color: #0F2B2E;
+    border: 1px #fff solid;
+    padding: 1.25rem 3.313rem;
+    color: #fff;
+    text-decoration: none;
+    right: 8.45%;
+    bottom: 100px;
+}
+.mission_block{
+    width: 100%;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    color: #323B60;
+    padding-bottom: 16rem;
+}
+.mission_name_text{
+    text-align: center;
+    margin-top: 15rem;
+    font-size: 2.25rem;
+    font-weight: 700;
+    padding-bottom: 5rem;
+}
+.our_mission_text{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    width: 880px;
+    max-width: 881px;
+    margin: auto;
+}
+.our_goals {
+    background-color: #002b36;
+    color: #fff;
+    text-align: center;
+}
+.our_goal_name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.25rem;
+    padding-top: 5.625rem;
+}
+.goal_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 13.375rem 8.45%;
+}
+.goal_container img{
+    width: 100%;
+}
+.production_block{
+    padding: 7.563rem 8.45%;
+}
+
+.production_block .block_name_production{
+    font-size: 2.25rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #323B60;
+    text-align: center;
+}
+.production_block .production_contain{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    margin-top: 6.313rem;
+}
+.production_contain .contain_first_line{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.production_contain .contain_first_line a{
+    width: 30rem;
+}
+.contain_second_line a{
+    width: 30rem;
+}
+a img{
+    width: 100%;
+}
+.contain_item{
+    position: relative;
+}
+.contain_item .contain_item_text{
+    position: absolute;
+    bottom: 2rem;
+    left: 1rem;
+    color: #fff;
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+.production_contain .contain_second_line{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    column-gap: 4rem;
+}
+.stat_our_production{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #0F2B2E;
+    margin-top: 5rem;
+}
+
+.stat_our_production .name_stat_production{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.stat_our_production .text_stat_first_line{
+    display: flex;
+    padding: 2rem 23%;
+    font-size: 2rem;
+    justify-content: space-between;
+}
+.stat_our_production .text_stat_item .num_stat_item{
+    font-size: 3rem;
+    text-align: center;
+}
+.stat_our_production .text_stat_second_line{
+    font-size: 2rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 10rem;
+}
+
+.kz_map_block{
+    margin: auto;
+    padding: 7rem 23%;
+}
+.kz_map_block .kz_map_name{
+    text-align: center;
+    font-weight: 600;
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.kz_map_block .kz_map_description{
+    margin-top: 1.5rem;
+    text-align: right;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.kz_map_block .kz_map{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1rem;
+}
+.kz_map .region{
+    stroke: #ffffff;
+    stroke-width: 3px;
+    fill: #002b36;
+    cursor: pointer;
+    transition: all 300ms ;
+}
+.kz_map .region:hover{
+    fill: #2c737b;
+}
+.kz_map {
+    position: relative;
+}
+.map_popup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: 0.3s all;
+    pointer-events: none;
+    z-index: 10;
+}
+.map_popup.active{
+    opacity: 1;
+    pointer-events: all;
+    transition: 0.3s all;
+}
+.popup_info{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: 20px;
+    padding: 25px;
+    width: 500px;
+}
+.for_entrepreneurs{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    padding: 7rem 26%;
+}
+.enterpreneurs_block_title,.enterpreneurs_text,.enterpreneurs_text_title{
+    text-align: center;
+}
+.enterpreneurs_block_title{
+    font-size: 3rem;
+    font-weight: 600;
+}
+.enterpreneurs_text{
+    margin-top: 7rem;
+    font-weight: 500;
+}
+.appointmen_block{
+    display: flex;
+    justify-content: center;
+}
+.appointment_form{
+    padding: 3.125rem 7.625rem 12.5rem;
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    font-family: 'Montserrat',sans-serif;
+}
+.appointment_form p{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+.appointment_form input{
+    background-color: #E0E0E0;
+    padding: .875rem .75rem;
+    border: 1px solid #000;
+    font-size: 1.25rem;
+    font-weight: 500;
+    width: 25rem;
+    max-width: 25rem;
+}
+#name{
+    margin-top: 2rem;
+}
+#phone{
+    margin-top: 2.063rem;
+}
+.btn_send_out{
+    position: relative;
+}
+#btn_send{
+    padding: 10px 28px;
+    background-color: #0F2B2E;
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #fff;
+    margin: auto;
+    border: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 4.25rem;
+}
+.gov_orders{
+    padding: 4.313rem 20% 9.25rem;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #0F2B2E;
+    color: #fff;
+    margin-top: 20rem;
+    font-weight: 600;
+    text-align: center;
+}
+.gov_orders .gov_orders_title{
+    font-size: 3rem;
+}
+.gov_orders .gov_orders_text{
+    font-size: 2rem;
+    margin-top: 6rem;
+}
+.gov_orders .gov_more_btn{
+    margin-top: 9rem;
+    display: flex;
+    justify-content: center;
+}
+.gov_orders .gov_more_btn .gov_more_link{
+    padding: .935rem 4.5rem;
+    background-color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #000;
+}
+.opposite_corruption{
+    font-family: 'Montserrat', sans-serif;
+    padding: 9rem 21% 15rem;
+    color: #0F2B2E;
+    text-align: center;
+}
+.opposite_corruption_title{
+    font-weight: 600;
+    font-size: 3rem;
+}
+.opposite_corruption_text{
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-top: 9rem;
+}
+.message_about_corruption{
+    margin-top: 6rem;
+}
+.msg_corruption{
+    color: #fff;
+    background-color: #0F2B2E;
+    padding: 1rem 3.125rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+.last_news_block{
+    color: #0F2B2E;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+}
+.last_news_block .last_news_title{
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 600;
+}
+.last_news_text{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1596px;
+    max-width: 1596px;
+    margin-top: 9.438rem;
+    overflow-x: scroll;
+    gap: 6rem;
+}
+.last_news_text::-webkit-scrollbar{
+    display: none;
+}
+.last_news_container{
+    width: 100%;
+    display: flex;
+    grid-template-columns: auto auto auto;
+    grid-gap: 6rem;
+}
+.controls #leftBtn, .controls #rightBtn{
+    width: 37px;
+    cursor: pointer;
+    position: absolute;
+    margin-top: 18rem;
+}
+.controls #leftBtn{
+    left: 3%;
+}
+.controls #rightBtn{
+    right: 3%;
+}
+.last_news_item .news_item_title{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.last_news_item .news_item_description{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: .75rem;
+}
+footer{
+    margin-top: 44rem;
+    background-color: #0F2B2E;
+    padding: 1.25rem 8.45% 5rem;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+.contact_block{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    width: 27%;
+    max-width: 430px;
+}
+.contact_title{
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: left;
+}
+.contact_item{
+    display: flex;
+    justify-content: space-between;
+    margin-top: .875rem;
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+.social_block{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3.25rem;
+}
+.social_list{
+    display: flex;
+    justify-content: space-between;
+    max-width: 750px;
+}
+.social_list_item{
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    text-align: right;
+    padding-left: 3.438rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+.social_links{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    margin-top: 2.125rem;
+    gap: 1rem;
+}
+.social_links a {
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+}
+.social_links a img{
+    width: 100%;
+}
+/* *{
+    border: 1px red solid;
+} */
+
+@media screen and (min-width: 2550px){
+    .production_block {
+        padding: 6rem 19.45%;
+    }
+    .controls #leftBtn {
+        left: 15%;
+    }
+    .controls #rightBtn {
+        right: 15%;
+    }
+    footer{
+        padding: 1.25rem 15% 5rem;
+    }
+}
+@media screen and (max-width: 1681px){
+    .production_contain .contain_first_line a {
+        width: 25rem;
+    }
+    .contain_second_line a {
+        width: 25rem;
+    }
+    .production_block {
+        padding: 6rem 12%;
+    }
+    .production_contain .contain_second_line {
+        column-gap: 2rem;
+    }
+    .production_block .production_contain {
+        gap: 2rem;
+    }
+    .contain_item .contain_item_text {
+        font-size: 1.75rem;
+    }
+    .stat_our_production .text_stat_second_line {
+        margin-top: 7rem;
+    }
+    .for_entrepreneurs {
+        padding: 5rem 20%;
+    }
+    .gov_orders{
+        margin-top: 10rem;
+        padding: 4.313rem 10% 9.25rem
+    }
+    .opposite_corruption {
+        padding: 7rem 15% 12rem;
+    }
+    .last_news_text{
+        margin-top: 6.5rem;
+        width: 1440px;
+    }
+    .last_news_container{
+        gap: 3rem;
+    }
+    .last_news_item{
+        width: 450px;
+    }
+    .last_news_item img{
+        width: 100%;
+    }
+    footer{
+        padding: 1.5rem 6.45% 4rem;
+    }
+}
+@media screen and (max-width: 1601px){
+    .front_block{
+        height: 750px;
+    }
+    .production_contain .contain_first_line a {
+        width: 24rem;
+    }
+    .controls #rightBtn {
+        right: 1%;
+    }
+    .controls #leftBtn {
+        left: 1%;
+    }
+    .contact_block{
+        width: 30%;
+    }
+}
+@media screen and (max-width: 1538px){
+    .logo_section{
+        height: 100px;
+    }
+    .logo_section img{
+        width: 100%;
+        height: 100%;
+    }
+    .ondiris_block{
+        padding: 0 1.375rem 9rem 7.75rem;
+    }
+    .front_block {
+        height: 630px;
+    }
+    .main_more_btn{
+        font-size: 1.5rem;
+    }
+    .mission_name_text{
+        margin-top: 15rem;
+        padding-bottom: 5rem;
+    }
+    .production_block {
+        padding: 4rem 10.5%;
+    }
+    .stat_our_production .text_stat_first_line {
+        padding: 2rem 15%;
+    }
+    .stat_our_production .text_stat_second_line {
+        margin-top: 2rem;
+    }
+    .for_entrepreneurs {
+        padding: 5rem 12%;
+    }
+    .enterpreneurs_text {
+        margin-top: 3rem;
+    }
+    .gov_orders{
+        font-weight: 500;
+    }
+    .gov_orders .gov_orders_text {
+        font-size: 1.75rem;
+        margin-top: 4rem;
+    }
+    .opposite_corruption_text {
+        margin-top: 6rem;
+    }
+    .last_news_text{
+        width: 1320px;
+    }
+    .controls #leftBtn, .controls #rightBtn{
+        margin-top: 15rem;
+    }
+    .contact_block {
+        width: 35%;
+    }
+}
+@media screen and (max-width: 1441px){
+    .goal_container{
+        padding: 8rem 8.45%;
+    }
+    .production_contain .contain_first_line a {
+        width: 22.5rem;
+    }
+    .contain_second_line a {
+        width: 22.5rem;
+    }
+    .for_entrepreneurs {
+        padding: 5rem 10%;
+    }
+    .last_news_text {
+        width: 1310px;
+    }
+    footer {
+        padding: 1.5rem 4% 4rem;
+    }
+}
+@media screen and (max-width: 1402px){
+    .production_block {
+        padding: 4rem 9%;
+    }
+    .production_block .production_contain{
+        margin-top: 5rem;
+    }
+    .for_entrepreneurs {
+        padding: 5rem 8%;
+    }
+    .gov_orders{
+        padding: 4.313rem 9% 9.25rem;
+    }
+    .last_news_text {
+        width: 1240px;
+    }
+    .last_news_container {
+        gap: 2rem;
+    }
+    footer{
+        margin-top: 40rem;
+    }
+}
+@media screen and (max-width: 1367px){
+    .front_block {
+        height: 565px;
+    }
+    .ondiris_block {
+        padding: 0 1.375rem 7rem 6rem;
+    }
+    .ondiris_block .ondiris_big_text{
+        font-size: 5rem;
+    }
+    .ondiris_block .ondiris_small_text{
+        font-size: 1.75rem;
+    }
+    .production_block {
+        padding: 4rem 9.25%;
+    }
+    .production_block .production_contain {
+        gap: 1rem;
+    }
+    .production_contain .contain_second_line {
+        column-gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 1281px){
+    header{
+        padding: 0 5%;
+    }
+    .front_block{
+        width: 90%;
+        padding: 5.313rem 5%;
+    }
+    .ondiris_block{
+        right: 5%;
+    }
+    .main_more_btn{
+        right: 5%;
+    }
+    .production_block {
+        padding: 4rem 6%;
+    }
+    .for_entrepreneurs {
+        padding: 4rem 5%;
+    }
+    .last_news_container {
+        gap: 1rem;
+    }
+    .last_news_text {
+        width: 1110px;
+    }
+}
+
+@media screen and (max-width: 1026px){
+    header {
+        padding: 0 1%;
+    }
+    .production_block {
+        padding: 4rem 2%;
+    }
+    .production_contain .contain_first_line a {
+        width: 20rem;
+    }
+    .contain_second_line a {
+        width: 20rem;
+    }
+    .stat_our_production .text_stat_first_line {
+        padding: 2rem 5%;
+    }
+    .kz_map_block {
+        margin: auto;
+        padding: 3rem 15%;
+    }
+    .opposite_corruption {
+        padding: 7rem 5% 10rem;
+    }
+    .last_news_text {
+        width: 880px;
+    }
+    footer {
+        margin-top: 35rem;
+        padding: 1.5rem 2% 4rem;
+    }
+    .contact_block{
+        width: 38%;
+    }
+    .contact_item{
+        font-size: 1rem;
+    }
+    .social_block{
+        margin-top: 1.5rem;
+    }
+    .social_list_item{
+        font-size: 1rem;
+    }
+}

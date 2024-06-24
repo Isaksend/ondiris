@@ -1,0 +1,275 @@
+body{
+    left: 0;
+    top: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 8.45%;
+}
+.menu_section{
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+.menu_section .nav_item{
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: #000;
+    font-size: 1.25rem;
+    padding: 0 .75rem;
+    font-weight: 500;
+    transition: all 300ms;
+}
+.menu_section .nav_item:hover{
+    color: #2c737b;
+}
+.change_lang_block{
+    padding: 2.5rem 0;
+}
+.change_lang_block .select_lang{
+    font-family: 'Montserrat', sans-serif;
+    color: #0F2B2E;
+    font-weight: 600;
+    font-size: 1.25rem;
+    border: none;
+}
+.select_lang:focus{
+    border: none;
+}
+.front_block{
+    background-image: url('./sewing_shoe_front_block.png');
+    width: 100%;
+    max-width: 100%;
+    height: 800px;
+    position: relative;
+}
+.front_block_text{
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    padding: 4.75rem 44% 15.8rem 8.45%;
+}
+.front_block_title{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.front_block_description{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 3.75rem;
+}
+.link_list{
+    right: 8.45%;
+    position: absolute;
+}
+.list_text{
+    display: flex;
+    font-size: 1.25rem;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+.links_group{
+    display: flex;
+    flex-direction: row;
+    width: 310px;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.links_group .link_item{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.link_item img{
+    width: 100%;
+    height: 100%;
+}
+.our_offer_block{
+    padding: 50px 15.625%;
+    font-family: 'Montserrat', sans-serif;
+}
+.our_offer_title{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.our_offer_text{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 3.125rem;
+}
+.our_offer_list{
+    margin-top: 4.375rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.our_offer_list ul li{
+    margin-top: .75rem;
+}
+.list_people{
+    margin-top: 5rem;
+    width: 100%;
+}
+.list_people img{
+    width: 100%;
+}
+.quality_block{
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    background-color: #0F2B2E;
+    padding-top: 5.875rem;
+    height: 70rem;
+}
+.quality_title{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.quality_text{
+    text-align: center;
+    font-weight: 500;
+    font-size: 2rem;
+    padding: 3.688rem 8.45%;
+}
+.logo_white{
+    position: relative;
+    margin-top: 2rem;
+}
+.logo_white img{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.controls{
+    margin-top: 4.375rem;
+}
+.last_news_block .last_news_title{
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 600;
+}
+.last_news_text{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1596px;
+    max-width: 1596px;
+    margin-top: 9.438rem;
+    overflow-x: scroll;
+    gap: 6rem;
+}
+.last_news_text::-webkit-scrollbar{
+    display: none;
+}
+.last_news_container{
+    width: 100%;
+    display: flex;
+    grid-template-columns: auto auto auto;
+    grid-gap: 2rem;
+}
+.controls #leftBtn, .controls #rightBtn{
+    width: 37px;
+    cursor: pointer;
+    position: absolute;
+    margin-top: 18rem;
+    z-index: 99;
+}
+.controls #leftBtn{
+    left: 3%;
+}
+.controls #rightBtn{
+    right: 3%;
+}
+span{
+    width: 300px;
+    height: 400px;
+}
+span img{
+    width: 100%;
+}
+.connect_block{
+    font-family: 'Montserrat',sans-serif;
+    width: 100%;
+    padding: 16.5rem 0;
+}
+.connect_btn_block{
+    position: relative;
+}
+.connect_btn{
+    position: absolute;
+    color: #fff;
+    background-color: #0F2B2E;
+    padding: 1rem 3.328rem;
+    font-size: 2rem;
+    font-weight: 500;
+    left: 50%;
+    transform: translateX(-50%);
+}
+footer{
+    margin-top: 5rem;
+    background-color: #0F2B2E;
+    padding: 1.25rem 8.45% 5rem;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+.contact_block{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    width: 27%;
+    max-width: 430px;
+}
+.contact_title{
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: left;
+}
+.contact_item{
+    display: flex;
+    justify-content: space-between;
+    margin-top: .875rem;
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+.social_block{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3.25rem;
+}
+.social_list{
+    display: flex;
+    justify-content: space-between;
+    max-width: 750px;
+}
+.social_list_item{
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    text-align: right;
+    padding-left: 3.438rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+.social_links{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    margin-top: 2.125rem;
+    gap: 1rem;
+}
+.social_links a {
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+}
+.social_links a img{
+    width: 100%;
+}
