@@ -28,3 +28,32 @@ leftBtn.addEventListener("click", ()=>{
     horizontalScroll.style.scrollBehavior = "smooth";
     horizontalScroll.scrollLeft -= 1692;
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const popup = document.getElementById('popup');
+    const closeButton = document.querySelector('.popup_close');
+
+    function openPopup() {
+        popup.classList.add('open');
+    }
+
+    function closePopup() {
+        popup.classList.remove('open');
+    }
+
+    closeButton.addEventListener('click', (event) => {
+        event.preventDefault();
+        closePopup();
+    });
+
+    popup.addEventListener('click', (event) => {
+        if (event.target === popup) {
+            closePopup();
+        }
+    });
+
+    const openPopupButton = document.querySelector('#open_popup_btn');
+    if (openPopupButton) {
+        openPopupButton.addEventListener('click', openPopup);
+    }
+});
