@@ -32,15 +32,16 @@ leftBtn.addEventListener("click", ()=>{
 document.addEventListener('DOMContentLoaded', () => {
     const popup = document.getElementById('popup');
     const closeButton = document.querySelector('.popup_close');
-
+    const body = document.body;
     function openPopup() {
         popup.classList.add('open');
+        body.style.overflow = 'hidden';
     }
 
     function closePopup() {
         popup.classList.remove('open');
+        body.style.overflow = ''; 
     }
-
     closeButton.addEventListener('click', (event) => {
         event.preventDefault();
         closePopup();

@@ -42,7 +42,7 @@ header{
     border: none;
 }
 .front_block{
-    background-image: url('./sewing_shoe_front_block.png');
+    background-image: url('./asset/front_block_bkg_prod.png');
     width: 100%;
     max-width: 100%;
     height: 800px;
@@ -91,36 +91,88 @@ header{
     width: 100%;
     height: 100%;
 }
-.our_offer_block{
-    padding: 50px 15.625%;
+.our_products{
     font-family: 'Montserrat', sans-serif;
+    padding: 3.125rem 8.45% 15rem;
+    overflow: hidden; /* Prevents showing the out of bound items */
+    position: relative; /* For positioning the navigation buttons */
 }
-.our_offer_title{
-    text-align: center;
+.our_products_title{
     font-size: 2.5rem;
-    font-weight: 600;
-}
-.our_offer_text{
-    font-size: 2rem;
+    font-weight: 700;
+    color: #000;
     text-align: center;
-    font-weight: 500;
-    margin-top: 3.125rem;
 }
-.our_offer_list{
-    margin-top: 4.375rem;
-    font-size: 1.5rem;
-    font-weight: 500;
+.our_products_contain{
+    margin-top: 7rem;
 }
-.our_offer_list ul li{
-    margin-top: .75rem;
-}
-.list_people{
-    margin-top: 5rem;
+.products_container{
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden; /* Hide anything outside the viewport */
+    scroll-behavior: smooth; /* Smooth scrolling when changing slides */
 }
-.list_people img{
-    width: 100%;
+.product_item {
+    flex: 0 0 calc(31% - 3%); /* Adjusting width to account for the gap */
+    margin-right: 3%; /* Right margin as the gap */
+    box-sizing: border-box; /* Include padding and border in the element's width */
 }
+
+.product_item:last-child {
+    margin-right: 0; /* Remove margin for the last item to prevent extra spacing */
+}
+.product_item_block{
+    width: 500px;
+    max-width: 500px;
+    height: 550px;
+    max-height: 550px;
+    position: relative;
+}
+.product_item_text{
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2.25rem;
+    font-weight: 700;
+    width: 70%;
+}
+.product_id_1{
+    background-image: url("./asset/product_item_1.png");
+}
+.product_id_2{
+    background-image: url("./asset/product_item_2.png");
+}
+.product_id_3{
+    background-image: url("./asset/product_item_3.png");
+}
+.product_id_4{
+    background-image: url("./asset/product_item_4.png");
+}
+.product_id_5{
+    background-image: url("./asset/product_item_5.png");
+}
+.product_id_6{
+    background-image: url("./asset/product_item_6.png");
+}
+.prev_button, .next_button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: none;
+    border: none;
+    cursor: pointer;
+}
+.prev_button {
+    left: 5%;
+}
+
+.next_button {
+    right: 5%;
+}
+
 .quality_block{
     width: 100%;
     font-family: 'Montserrat', sans-serif;
@@ -361,6 +413,15 @@ footer{
     .link_list {
         right: 20%;
     }
+    .our_products{
+        padding: 3.125rem 19% 15rem
+    }
+    .prev_button {
+        left: 15%;
+    }
+    .next_button {
+        right: 15%;
+    }
     .quality_text{
         padding: 3.688rem 18%;
     }
@@ -397,6 +458,15 @@ footer{
     .contact_block{
         width: 40%;
     }
+    .product_item_block {
+        width: 435px;
+    }
+    .prev_button {
+        left: 3%;
+    }
+    .next_button {
+        right: 3%;
+    }
 }
 @media screen and (max-width: 1601px){
     header{
@@ -408,10 +478,19 @@ footer{
     .last_news_text {
         width: 1400px;
     }
+    .product_item_block {
+        width: 417px;
+    }
 }
 @media screen and (max-width: 1561px) {
     .front_block_text {
         padding: 4.75rem 30% 15.8rem 5%;
+    }
+    .product_item{
+        margin-right: 2%;
+    }
+    .product_item_block {
+        width: 408px;
     }
     .last_news_text {
         width: 1330px;
@@ -422,10 +501,18 @@ footer{
     .controls #rightBtn{
         margin-top: 16rem;
     }
+    
 }
 @media screen and (max-width: 1441px){
     .last_news_text {
         width: 1250px;
+    }
+    .product_item_block{
+        width: 383px;
+        height: 450px;
+    }
+    .product_item_text{
+        font-size: 2rem;
     }
 }
 @media  screen and (max-width: 1367px) {
@@ -448,8 +535,8 @@ footer{
     .logo_section img{
         height: 100%;
     }
-    .our_offer_block {
-        padding: 50px 8%;
+    .product_item_block {
+        width: 364px;
     }
     .last_news_text {
         width: 1180px;
@@ -461,6 +548,15 @@ footer{
     }
     .front_block_description{
         margin-top: 3rem;
+    }
+    .our_products{
+        padding: 3.125rem 5% 15rem;
+    }
+    .prev_button {
+        left: 0%;
+    }
+    .next_button {
+        right: 0%;
     }
     .quality_text{
         font-size: 1.75rem;
@@ -513,13 +609,22 @@ footer{
     }
 }
 @media screen and (max-width: 1025px) {
-    .our_offer_text {
-        font-size: 1.5rem;
-    }
-    .our_offer_list{
-        font-size: 1.25rem;
-    }
     .last_news_text {
         width: 900px;
+    }
+    .our_products {
+        padding: 3.125rem 6% 15rem;
+    }
+    .our_products_contain {
+        margin-top: 4rem;
+    }
+    .product_item {
+        flex: 0 0 calc(35% - 3%);
+    }
+    .product_item_block {
+        width: 100%;
+    }
+    .product_item_text {
+        font-size: 1.5rem;
     }
 }
