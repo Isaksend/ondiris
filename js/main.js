@@ -37,7 +37,6 @@ document.addEventListener('DOMContentLoaded', () => {
         popup.classList.add('open');
         body.style.overflow = 'hidden';
     }
-
     function closePopup() {
         popup.classList.remove('open');
         body.style.overflow = ''; 
@@ -52,7 +51,6 @@ document.addEventListener('DOMContentLoaded', () => {
             closePopup();
         }
     });
-
     const openPopupButton = document.querySelector('#open_popup_btn');
     if (openPopupButton) {
         openPopupButton.addEventListener('click', openPopup);

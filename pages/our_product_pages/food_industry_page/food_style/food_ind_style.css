@@ -4,7 +4,6 @@ body{
     margin: 0;
     width: 100%;
     max-width: 100%;
-    scroll-behavior: smooth;
 }
 html{
     scroll-behavior: smooth;
@@ -45,10 +44,10 @@ header{
     border: none;
 }
 .front_block{
-    background-image: url('./sewing_shoe_front_block.png');
+    background-image: url('./food_ind_front_block_bkg.png');
     width: 100%;
     max-width: 100%;
-    height: 800px;
+    height: 700px;
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
@@ -70,6 +69,7 @@ header{
 .link_list{
     right: 8.45%;
     position: absolute;
+    bottom: 3.5rem;
 }
 .list_text{
     display: flex;
@@ -94,133 +94,85 @@ header{
     width: 100%;
     height: 100%;
 }
-.our_offer_block{
-    padding: 50px 15.625%;
+.our_products{
     font-family: 'Montserrat', sans-serif;
+    padding: 3.125rem 8.45% 15rem;
+    overflow: hidden; /* Prevents showing the out of bound items */
+    position: relative; /* For positioning the navigation buttons */
 }
-.our_offer_title{
-    text-align: center;
+.our_products_title{
     font-size: 2.5rem;
-    font-weight: 600;
-}
-.our_offer_text{
-    font-size: 2rem;
+    font-weight: 700;
+    color: #000;
     text-align: center;
-    font-weight: 500;
-    margin-top: 3.125rem;
+    margin-top: 4rem;
 }
-.our_offer_list{
-    margin-top: 4.375rem;
-    font-size: 1.5rem;
-    font-weight: 500;
-}
-.our_offer_list ul li{
-    margin-top: .75rem;
-}
-.list_people{
+.our_products_contain{
     margin-top: 5rem;
-    width: 100%;
 }
-.list_people img{
-    width: 100%;
-}
-.quality_block{
-    width: 100%;
-    font-family: 'Montserrat', sans-serif;
-    color: #fff;
-    background-color: #0F2B2E;
-    padding-top: 5.875rem;
-    height: 70rem;
-}
-.quality_title{
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: 600;
-}
-.quality_text{
-    text-align: center;
-    font-weight: 500;
-    font-size: 2rem;
-    padding: 3.688rem 8.45%;
-}
-.logo_white{
-    position: relative;
-    margin-top: 2rem;
-}
-.logo_white img{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
-.controls{
-    margin-top: 4.375rem;
-}
-.last_news_block .last_news_title{
-    font-size: 3rem;
-    text-align: center;
-    font-weight: 600;
-}
-.last_news_text{
-    display: flex;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 1596px;
-    max-width: 1596px;
-    margin-top: 9.438rem;
-    overflow-x: scroll;
-    gap: 6rem;
-}
-.last_news_text::-webkit-scrollbar{
-    display: none;
-}
-.last_news_container{
+.products_container{
     width: 100%;
     display: flex;
-    grid-template-columns: auto auto auto;
-    grid-gap: 2rem;
+    justify-content: space-between;
+    overflow: hidden; /* Hide anything outside the viewport */
+    scroll-behavior: smooth; /* Smooth scrolling when changing slides */
 }
-.controls #leftBtn, .controls #rightBtn{
-    width: 37px;
-    cursor: pointer;
-    position: absolute;
-    margin-top: 18rem;
-    z-index: 99;
+.product_item {
+    flex: 0 0 calc(31% - 3%); /* Adjusting width to account for the gap */
+    margin-right: 3%; /* Right margin as the gap */
+    box-sizing: border-box; /* Include padding and border in the element's width */
 }
-.controls #leftBtn{
-    left: 3%;
+
+.product_item:last-child {
+    margin-right: 0; /* Remove margin for the last item to prevent extra spacing */
 }
-.controls #rightBtn{
-    right: 3%;
-}
-span{
-    width: 300px;
-    height: 400px;
-}
-span img{
-    width: 100%;
-}
-.connect_block{
-    font-family: 'Montserrat',sans-serif;
-    width: 100%;
-    padding: 16.5rem 0;
-}
-.connect_btn_block{
+.product_item_block{
+    width: 500px;
+    max-width: 500px;
+    height: 550px;
+    max-height: 550px;
     position: relative;
 }
-.connect_btn{
+.product_item_text{
     position: absolute;
+    left: 20px;
+    bottom: 20px;
     color: #fff;
-    background-color: #0F2B2E;
-    padding: 1rem 3.328rem;
-    font-size: 2rem;
-    font-weight: 500;
-    left: 50%;
-    transform: translateX(-50%);
+    text-decoration: none;
+    font-size: 2.25rem;
+    font-weight: 700;
+    width: 70%;
+}
+.product_id_1{
+    background-image: url("./food_item_1.png");
+}
+.product_id_2{
+    background-image: url("./food_item_2.png");
+}
+.product_id_3{
+    background-image: url("./food_item_3.png");
+}
+.product_id_4{
+    background-image: url("./food_item_4.png");
+}
+.prev_button, .next_button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: none;
+    border: none;
     cursor: pointer;
 }
+.prev_button {
+    left: 5%;
+}
+
+.next_button {
+    right: 5%;
+}
+
 footer{
-    margin-top: 5rem;
+    margin-top: 1rem;
     background-color: #0F2B2E;
     padding: 1.25rem 8.45% 5rem;
     font-family: 'Montserrat', sans-serif;
@@ -280,79 +232,6 @@ footer{
 .social_links a img{
     width: 100%;
 }
-.connect_our_block{
-    width: 100%;
-    position: relative;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-.popup{
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.7);
-    opacity: 0;
-    visibility: hidden;
-    overflow-y: auto;
-    overflow-x: hidden;
-    transition: all 0.8s ease 0s;
-}
-.popup.open{
-    opacity: 1;
-    visibility: visible;
-}
-.popup_body{
-    min-height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.popup_content{
-    background-color: #fff;
-    color: #000;
-    max-width: 500px;
-    padding: 5rem;
-    font-family: 'Montserrat',sans-serif;
-    position: relative;
-}
-.popup_close{
-    position: absolute;
-    font-size: 2rem;
-    text-decoration: none;
-    color: #000;
-    top: 10px;
-    right: 20px;
-}
-.popup_title{
-    font-size: 1.75rem;
-    text-align: center;
-    font-weight: 600;
-}
-.popup_text{
-    display: flex;
-    flex-direction: column;
-}
-.popup_text input{
-    padding: .75rem;
-    font-weight: 500;
-    font-size: 1.25rem;
-    margin-top: 2rem;
-}
-.submit_btn{
-    margin-top: 2rem;
-    position: relative;
-}
-.submit_btn button{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 1.25rem;
-    color: #fff;
-    background-color: #0F2B2E;
-    padding: .5rem 1.25rem;
-}
 
 @media screen and (min-width: 2550px){
     header{
@@ -363,6 +242,15 @@ footer{
     }
     .link_list {
         right: 20%;
+    }
+    .our_products{
+        padding: 3.125rem 19% 15rem
+    }
+    .prev_button {
+        left: 15%;
+    }
+    .next_button {
+        right: 15%;
     }
     .quality_text{
         padding: 3.688rem 18%;
@@ -388,17 +276,15 @@ footer{
         padding: 1.25rem 5% 5rem;
     }
 }
-@media screen and (max-width: 1761px){
-    .last_news_text{
-        width: 1510px;
-    }
-}
 @media screen and (max-width: 1681px){
-    .last_news_text {
-        width: 1450px;
+    .product_item_block {
+        width: 435px;
     }
-    .contact_block{
-        width: 40%;
+    .prev_button {
+        left: 3%;
+    }
+    .next_button {
+        right: 3%;
     }
 }
 @media screen and (max-width: 1601px){
@@ -408,16 +294,22 @@ footer{
     .front_block_text{
         padding: 4.75rem 37% 15.8rem 5%;
     }
-    .last_news_text {
-        width: 1400px;
+    .product_item_block {
+        width: 417px;
     }
 }
 @media screen and (max-width: 1561px) {
     .front_block_text {
         padding: 4.75rem 30% 15.8rem 5%;
     }
-    .last_news_text {
-        width: 1330px;
+    .contact_block{
+        width: 35%;
+    }
+    .product_item{
+        margin-right: 2%;
+    }
+    .product_item_block {
+        width: 408px;
     }
     .controls #leftBtn{
         margin-top: 16rem;
@@ -427,8 +319,12 @@ footer{
     }
 }
 @media screen and (max-width: 1441px){
-    .last_news_text {
-        width: 1250px;
+    .product_item_block{
+        width: 383px;
+        height: 450px;
+    }
+    .product_item_text{
+        font-size: 2rem;
     }
 }
 @media  screen and (max-width: 1367px) {
@@ -451,11 +347,8 @@ footer{
     .logo_section img{
         height: 100%;
     }
-    .our_offer_block {
-        padding: 50px 8%;
-    }
-    .last_news_text {
-        width: 1180px;
+    .product_item_block {
+        width: 364px;
     }
 }
 @media screen and (max-width: 1281px){
@@ -465,9 +358,14 @@ footer{
     .front_block_description{
         margin-top: 3rem;
     }
-    .quality_text{
-        font-size: 1.75rem;
-        padding: 3.688rem 5%;
+    .our_products{
+        padding: 3.125rem 5% 15rem;
+    }
+    .prev_button {
+        left: 0%;
+    }
+    .next_button {
+        right: 0%;
     }
     .controls #leftBtn {
         left: 1%;
@@ -476,15 +374,6 @@ footer{
     .controls #rightBtn{
         right: 1%;
         margin-top: 14rem;
-    }
-    .last_news_text {
-        width: 1100px;
-    }
-    .last_news_container{
-        grid-gap: 1rem;
-    }
-    .connect_btn{
-        font-size: 1.5rem;
     }
     footer {
         padding: 1.25rem 1% 5rem;
@@ -516,13 +405,23 @@ footer{
     }
 }
 @media screen and (max-width: 1025px) {
-    .our_offer_text {
-        font-size: 1.5rem;
-    }
-    .our_offer_list{
-        font-size: 1.25rem;
-    }
     .last_news_text {
         width: 900px;
+    }
+    .our_products {
+        padding: 3.125rem 6% 15rem;
+    }
+    .our_products_contain {
+        margin-top: 4rem;
+    }
+    .product_item {
+        flex: 0 0 calc(35% - 3%);
+    }
+    .product_item_block {
+        width: 100%;
+        height: 400px
+    }
+    .product_item_text {
+        font-size: 1.5rem;
     }
 }

@@ -6,6 +6,9 @@ body{
     max-width: 100%;
     scroll-behavior: smooth;
 }
+html{
+    scroll-behavior: smooth;
+}
 header{
     display: flex;
     flex-direction: row;
